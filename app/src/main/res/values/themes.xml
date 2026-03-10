@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ToDoApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="alertDialogTheme">@style/DarkAlertDialogTheme</item>
+    </style>
+
+    <style name="Theme.ToDoApp" parent="Base.Theme.ToDoApp" />
+
+    <style name="DarkAlertDialogTheme" parent="Theme.Material3.DayNight.Dialog.Alert">
+        <item name="android:background">@color/surface_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:colorAccent">@color/primary_accent</item>
+        <item name="android:backgroundTint">@color/surface_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="buttonBarButtonStyle">@style/DialogButtonStyle</item>
+    </style>
+
+    <style name="DialogButtonStyle" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/primary_accent</item>
+    </style>
+</resources>

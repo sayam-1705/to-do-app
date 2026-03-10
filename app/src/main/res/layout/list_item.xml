@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="@color/surface_dark"
+    android:layout_marginBottom="4dp">
+
+    <!-- Reorder handle -->
+    <ImageView
+        android:id="@+id/reorderHandle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        app:tint="@color/text_secondary"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Drag to reorder" />
+
+    <CheckBox
+        android:id="@+id/taskCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/primary_accent" />
+
+    <TextView
+        android:id="@+id/taskTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp" />
+
+    <!-- Edit Icon -->
+    <ImageView
+        android:id="@+id/editIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_edit"
+        app:tint="@color/primary_accent"
+        android:layout_marginEnd="12dp"
+        android:padding="2dp"
+        android:contentDescription="Edit task" />
+
+    <!-- Delete Icon -->
+    <ImageView
+        android:id="@+id/deleteIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_delete"
+        app:tint="#FF5252"
+        android:padding="2dp"
+        android:contentDescription="Delete task" />
+
+</LinearLayout>
